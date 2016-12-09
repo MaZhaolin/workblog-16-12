@@ -1,0 +1,243 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+figure{
+  position: relative;
+  width: 33.33%;
+  overflow: hidden;
+  float: left;
+  height: 350px;
+  background: #555;
+}
+
+figure img{
+  height:350px;
+  opacity: 0.9;
+  -webkit-transition:  all .35s;;
+  -o-transition:  all .35s;;
+  transition:  all .35s;;
+}
+figure figcaption{
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+}
+figure figcaption p,h2,span,div{
+  -webkit-transition:  all .35s;
+  -o-transition:  all .35s;
+  transition:  all .35s;
+}
+figure:hover h2{
+  transform: translate(15%,150%);
+}
+
+.test1 figcaption p{
+  background: #fff;
+  padding:10px 20px;
+  margin:5px;
+  -webkit-transform:  translate(-200px,0);
+  -ms-transform:  translate(-200px,0);
+  transform:  translate(-200px,0);
+}
+.test1 figcaption p:nth-child(1){
+  -webkit-transition-delay:  0.05s;
+  -o-transition-delay:  0.05s;
+  transition-delay:  0.05s;
+}
+.test1 figcaption p:nth-child(2){
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.test1 figcaption p:nth-child(3){
+  -webkit-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.test1:hover figcaption p{
+  -webkit-transform:  translate(0,0);
+  -ms-transform:  translate(0,0);
+  transform:  translate(0,0);
+}
+.test1:hover img{
+  -webkit-transform: translate(-50px,0);
+  -ms-transform: translate(-50px,0);
+  transform: translate(-50px,0);
+  opacity: 0.5;
+}
+
+.test2 figcaption{
+  width: 100%;
+  height: 100%;
+}
+.test2 figcaption p{
+  opacity: 0;
+  -webkit-transform: translate(0,100px);;
+  -ms-transform: translate(0,100px);;
+  transform: translate(0,100px);;
+}
+.test2 figcaption div{
+  border: 2px solid #fff;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top:10%;
+  left: 10%;
+  -webkit-transform: translate(0,-350px) rotate(0deg);
+  -ms-transform: translate(0,-350px) rotate(0deg);
+  transform: translate(0,-350px) rotate(0deg);
+}
+.test2:hover figcaption div{
+  -webkit-transform: translate(0,0) rotate(360deg);
+  -ms-transform: translate(0,0) rotate(360deg);
+  transform: translate(0,0) rotate(360deg);
+}
+.test2:hover figcaption p{
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+  opacity: 1;
+}figure:hover img{
+  opacity: 0.5
+}
+
+.test3 figcaption p{
+  color: #fff;
+  -webkit-transform:  skew(90deg);
+  -ms-transform:  skew(90deg);
+  transform:  skew(90deg);
+}
+.test3 figcaption h2{
+  color: #fff;
+  }.test3:hover figcaption p{
+  -webkit-transform:  skew(0deg);
+  -ms-transform:  skew(0deg);
+  transform:  skew(0deg);
+}
+
+
+
+.test4 figcaption{
+  color:#fff
+}
+.test4 figcaption P{
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.test4 img{
+  -webkit-transform:  scale(1.5);
+  -ms-transform:  scale(1.5);
+  transform:  scale(1.5);
+}
+.test4:hover img{
+  -webkit-transform:  scale(1);
+  -ms-transform:  scale(1);
+  transform:  scale(1);
+}
+.test4 figcaption h2{
+  color: #fff;
+  }.test4:hover p{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.test5 figcaption{
+  padding: 0;
+  width: 100%;
+}.test5 figcaption h2{
+  padding: 20px;
+}
+.test5 figcaption div{
+  background: rgba(255, 255, 255, 0.5);;
+  width: 120%;
+  height:300%;
+  position: absolute;
+  top:350px;
+  -webkit-transform-origin:0 0;
+  -moz-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  -o-transform-origin:0 0;
+  transform-origin:0 0;
+  text-align: center;
+}
+.test5:hover figcaption div{
+  -webkit-transform:  rotate(-15deg);
+  -ms-transform:  rotate(-15deg);
+  transform:  rotate(-15deg);
+}
+.test5 figcaption div p{
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  padding-left: 200px;
+}
+
+.test6 figcaption{
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff
+}.test6 figcaption  p{
+  padding: 15%;
+}
+
+.test6 figcaption div{
+  position: absolute;
+  opacity: 0;
+}
+.test6 figcaption .box1{
+  width:2%;
+  top:10%;
+  left:50%;
+  height: 80%;
+}
+.test6 figcaption .box2{
+  height:2%;
+  left:10%;
+  top:50%;
+  width: 80%;
+}
+.test6:hover figcaption .box1{
+  -webkit-transform: scaleX(45);
+  -ms-transform: scaleX(45);
+  transform: scaleX(45);
+  opacity: 1;
+}
+.test6:hover figcaption .box2{
+  -webkit-transform: scaleY(45);
+  -ms-transform: scaleY(45);
+  transform: scaleY(45);
+  opacity: 1;
+}
+.test6 figcaption .box1{
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;
+}
+.test6 figcaption .box2{
+  border-left:2px solid #fff;
+  border-right:2px solid #fff;
+}
+
+@media screen and (max-width:600px) {
+  figure{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:1001px) {
+  figure{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:1001px) {
+  figure{
+    width: 33.33%;
+  }
+}
