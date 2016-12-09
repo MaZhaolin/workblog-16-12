@@ -9,8 +9,8 @@
       workView=$('#workView');
 
   toggleSidebarEl.click(function(){
-    sidebar.addClass('show');
-    mask.show();
+    sidebar.toggleClass('show');
+    mask.toggle();
   });
 
   mask.click(function(){
@@ -32,15 +32,21 @@
     mask.fadeToggle();
   }
 
-  win.scroll(function(){
-    if(win.scrollTop()>win.height()){
+  win.scroll(toggleBar);
+  toggleBar();
+  function toggleBar(){
+    if(win.scrollTop()>750){
       backTop.show();
       $('nav').addClass('fixed');
     }else{
       backTop.hide();
+    }
+    if(win.scrollTop()>50){
+      $('nav').addClass('fixed');
+    }else{
       $('nav').removeClass('fixed');
     }
-  });
+  }
 
   backTop.click(function(){
     $('html,body').animate({scrollTop:0},800);

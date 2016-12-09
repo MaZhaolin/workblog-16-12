@@ -1,5 +1,10 @@
 *{
-  font-family: 'Monaco','微软雅黑'
+  font-family: 'Monaco','微软雅黑';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 a{
   text-decoration: none;
@@ -40,7 +45,8 @@ nav.fixed{
   z-index: 100
 }
 nav.fixed a,nav.fixed i{
-  color: #555
+  color: #555;
+  z-index: 100
 }
 nav ul li{
   display: inline-block;
@@ -63,7 +69,7 @@ nav .logo a{
   letter-spacing:1px;
 }
 .banner{
-  height: 600px;
+  height: 800px;
   background: transparent;
 }
 
@@ -159,7 +165,10 @@ nav .logo a{
   padding:40px;
   font-size:16px;
   -webkit-box-sizing: border-box;;
-  box-sizing: border-box;;
+  box-sizing: border-box;
+}
+.article-preview .text-section .sub-heading{
+  font-weight: bold;
 }
 .purple-section{
   background: #5F409C;
@@ -187,8 +196,12 @@ nav .logo a{
   width: 50%;
   float: left;
   padding:20px 30px;
-  -webkit-box-sizing: border-box;;
-  box-sizing: border-box;;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 200px;
+}
+.cards .card a{
+  text-decoration: underline;
 }
 .card:nth-child(1){
   background:rgba(0, 0, 0, 0.2);
@@ -245,6 +258,7 @@ footer .copy{
   -webkit-transition: right .3s;
   -o-transition: right .3s;
   transition: right .3s;
+  z-index: 101
 }
 #sidebar.show{
   right: 0px;
@@ -271,6 +285,7 @@ footer .copy{
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 101
 }
 #backTop{
   width: 50px;
@@ -300,6 +315,7 @@ footer .copy{
   -moz-box-shadow:2px 2px 16px #3D3D3D;
   -webkit-box-shadow:2px 2px 16px #3D3D3D;
   box-shadow:2px 2px 16px #3D3D3D;
+  z-index: 101;
 }
 #workView .toolbar{
   height:25px;
