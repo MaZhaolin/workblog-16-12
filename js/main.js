@@ -46,10 +46,10 @@
     }else{
       $('nav').removeClass('fixed');
     }
-  }
+  } 
 
   backTop.click(function(){
-    $('html,body').animate({scrollTop:0},800);
+    body.animate({scrollTop:0},800);
   });
 
 })
