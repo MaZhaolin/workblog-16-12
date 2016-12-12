@@ -1,11 +1,37 @@
+body{
+  overflow: hidden;
+}
+#body{
+  position: absolute;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+#scrollbar{
+  width: 15px;
+  position: absolute;
+  right: 0px;
+  top:0;
+  background: #eee;
+  z-index: 1001
+}
+#scrollbar #bar{
+  cursor: pointer;
+  width: 15px;
+  position: absolute;
+  right: 0px;
+  top:0;
+  background:#555;
+  z-index: 1002
+}
+::selection{
+  color: #fff;
+  background: #FF6262;
+}
 *{
   font-family: 'Aref Ruqaa', Arial, sans-serif;
   letter-spacing: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
 }
 a{
   text-decoration: none;
@@ -423,6 +449,9 @@ footer .copy{
   }
   footer .share-group li{
     display: block;
+  }
+  .hr{
+    width:80%;
   }
 }
 
