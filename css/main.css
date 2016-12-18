@@ -374,7 +374,7 @@ footer .copy{
   position: fixed;
   right: 100px;
   bottom: 150px;
-  display: none;
+  display: none; 
 }
 #backTop .fa{
   line-height: inherit;
@@ -452,6 +452,9 @@ footer .copy{
   }
   .hr{
     width:80%;
+  }
+  #scrollbar{
+    display: none;
   }
 }
 
